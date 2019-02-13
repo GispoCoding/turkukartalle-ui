@@ -1,3 +1,3 @@
 # Turku kartalle
 
-Turku kartalle Oskari-sovellus PoC
+Turku kartalle Oskari-sovellus PoC - UI-osan koodi
