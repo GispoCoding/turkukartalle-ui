@@ -1,6 +1,7 @@
 
 
-var IFRAME_DOMAIN = 'http://karttatehdas.fi:8080';
+var IFRAME_DOMAIN = 'https://kartta.paikkatietoikkuna.fi';
+//var IFRAME_DOMAIN = 'http://karttatehdas.fi:8080';
 var markerCounter = 0;
 
 $(function() {
@@ -17,7 +18,7 @@ $(function() {
   channel.onReady(function() {
       //channel is now ready and listening.
       channel.log('Map is now listening');
-      var expectedOskariVersion = '1.50.0';
+      var expectedOskariVersion = '1.49.0';
       channel.isSupported(expectedOskariVersion, function(blnSupported) {
         if(blnSupported) {
           channel.log('Client is supported and Oskari version is ' + expectedOskariVersion);
@@ -64,6 +65,41 @@ $(function() {
     channel.getFeatures([true], function(data) {
       channel.log('GetFeatures: ', data);
     });
+
+      $.getJSON('http://turkukartalle.karttatehdas.fi:3000/features', function(data) {
+	  console.log(data);
+
+	  var params = [data, {
+	      centerTo: true,
+	      featureStyle: {
+		  fill: {
+		      color: '#ff0000'
+		  },
+		  stroke : {
+		      color: '#ff0000',
+		      width: 5
+		  },
+		  text : {
+		      scale : 1.3,
+		      fill : {
+			  color : 'rgba(0,0,0,1)'
+		      },
+		      stroke : {
+			  color : 'rgba(255,255,255,1)',
+			  width : 2
+		      },
+		      labelProperty: 'test_property'
+		  }
+	      },
+	      cursor: 'zoom-out',
+	      prio: 1
+	  }];
+
+	  channel.postRequest(
+	      'MapModulePlugin.AddFeaturesToMapRequest',
+	      params
+	  );
+      });
 
   });
 
