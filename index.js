@@ -108,6 +108,23 @@ $(function() {
 	function(data) {
 	    console.log('MapClickedEvent', data);
 	    console.log(TurkuKartalle.lastClickedFeatureIndex);
+
+	    if (TurkuKartalle.lastClickedFeatureIndex != -1) {
+		const feature = TurkuKartalle.features[TurkuKartalle.lastClickedFeatureIndex];
+		var html = '<p><b>' + feature.properties.nimi + '</b></p>' +
+		    '<p><img src="' + feature.properties.kuva_url + '"></p>' +
+		    '<p>' + feature.properties.kuva_license_text + '</p>' +
+		    '<p><a href="' + feature.properties.kuva_info_url + '" target="_blank">kuva Filckrissä</a></p>' +
+		    '<p><a href="' + feature.properties.license_info_url + '" target="_blank">lisenssi</a></p>';
+		$('#featurePopup').html(html);
+		$('#featurePopup').css('top', data.y);
+		$('#featurePopup').css('left', data.x);
+		$('#featurePopup').show();
+		TurkuKartalle.lastClickedFeatureIndex = -1;
+	    }
+	    else {
+		$('#featurePopup').hide();
+	    }
         }
     );
 
