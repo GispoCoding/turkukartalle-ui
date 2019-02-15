@@ -66,7 +66,7 @@ $(function() {
 	    channel.log('GetFeatures: ', data);
 	});
 
-	$.getJSON('http://turkukartalle.karttatehdas.fi:3000/features', function(data) {
+	$.getJSON('https://turkukartalle.karttatehdas.fi/features', function(data) {
 	    console.log(data);
 	    TurkuKartalle.features = data.features;
 

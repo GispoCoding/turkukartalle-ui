@@ -19,6 +19,8 @@ Jos käytössä ei ole vielä WWW-palvelinta, niin esim. Apache HTTP Server 2 on
 sudo apt install apache2
 </pre>
 
+Apachen tapauksessa asenna halutessasi myös https-tuki / <a href="https://letsencrypt.org/">Let's Encrypt SSL-sertifikaatti</a> <a href="https://certbot.eff.org/lets-encrypt/ubuntubionic-apache">Certbotilla</a>. Tämä vaatii <a href="https://github.com/GispoCoding/turkukartalle-backend">backendin</a> kanssa myös joitakin manuaalisia muutoksia Apachen konfigurointiin.
+
 ### UI-koodin asentaminen
 
 Apache 2:n tapauksessa oletuksena /var/www/html-hakemiston sisältö jaetaan WWW-selaimille. Asennetaan siis UI-koodi ko. hakemiston alla olevaan alihakemistoon:
