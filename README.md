@@ -34,3 +34,12 @@ Jotta saat Oskari-kartan näkyviin, niin luo karttajulkaisu esimerkiksi <a href=
 ## Tuloksen katselu
 
 Siirry WWW-selaimella URL-osoitteeseen, joka vastaa palvelimesi osoitetta, eli mahdollisesti http://localhost/, http://minun.oma.fi/ tai http://11.22.33.44/.
+
+## Kiitokset
+
+Sovelluksen toteutuksen tässä muodossa mahdollistivat:
++ Gispon ihmiset, http://www.gispo.fi/
++ Oskarin ihmiset ja sivusto, http://oskari.org/
++ Suomen evankelis-luterilainen kirkko (backend)
++ Build An Interactive Game of Thrones Map (Part I) - Node.js,  PostGIS, and Redis, https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/ (backend)
++ Monet muut ihmiset ja tahot
