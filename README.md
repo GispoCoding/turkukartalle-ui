@@ -40,6 +40,7 @@ Siirry WWW-selaimella URL-osoitteeseen, joka vastaa palvelimesi osoitetta, eli m
 Sovelluksen toteutuksen tässä muodossa mahdollistivat:
 + HOT-OSM Finlandin ihmiset, https://www.facebook.com/groups/hotosmfi/
 + Gispon ihmiset, http://www.gispo.fi/
++ Aurajokisäätiö, http://aurajoki.net/
 + Oskarin ihmiset ja sivusto, http://oskari.org/
 + Suomen evankelis-luterilainen kirkko (backend)
 + Stack Overflow, https://stackoverflow.com/
