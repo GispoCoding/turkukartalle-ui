@@ -38,8 +38,10 @@ Siirry WWW-selaimella URL-osoitteeseen, joka vastaa palvelimesi osoitetta, eli m
 ## Kiitokset
 
 Sovelluksen toteutuksen tässä muodossa mahdollistivat:
++ HOT-OSM Finlandin ihmiset, https://www.facebook.com/groups/hotosmfi/
 + Gispon ihmiset, http://www.gispo.fi/
 + Oskarin ihmiset ja sivusto, http://oskari.org/
 + Suomen evankelis-luterilainen kirkko (backend)
++ Stack Overflow, https://stackoverflow.com/
 + Build An Interactive Game of Thrones Map (Part I) - Node.js,  PostGIS, and Redis, https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/ (backend)
 + Monet muut ihmiset ja tahot
