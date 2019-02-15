@@ -46,5 +46,6 @@ Sovelluksen toteutuksen tässä muodossa mahdollistivat:
 + Oskarin ihmiset ja sivusto, http://oskari.org/
 + Suomen evankelis-luterilainen kirkko (backend)
 + Stack Overflow, https://stackoverflow.com/
++ Favicon & App Icon Generator, https://www.favicon-generator.org/
 + Build An Interactive Game of Thrones Map (Part I) - Node.js,  PostGIS, and Redis, https://blog.patricktriest.com/game-of-thrones-map-node-postgres-redis/ (backend)
 + Monet muut ihmiset ja tahot
