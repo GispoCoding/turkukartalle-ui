@@ -25,7 +25,7 @@ Apache 2:n tapauksessa oletuksena /var/www/html-hakemiston sisältö jaetaan WWW
 <pre>
 cd /var/www/html
 git clone https://github.com/GispoCoding/turkukartalle-ui
-<pre>
+</pre>
 
 ### UI-koodin valmistelu
 
